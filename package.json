@@ -1,0 +1,24 @@
+{
+  "name": "animescreen",
+  "version": "1.0.0",
+  "description": "AnimeScreen Frontend",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GitHugop/AnimeScreen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GitHugop/AnimeScreen/issues"
+  },
+  "homepage": "https://github.com/GitHugop/AnimeScreen#readme"
+}
