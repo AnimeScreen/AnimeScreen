@@ -1,0 +1,78 @@
+.container{
+	height: 100%;
+	width: 100%;
+}
+.logo{
+	left: 85px;
+	position: absolute;
+	top: 30px;
+}
+.text{
+	position: absolute;
+	left: 70px;
+	top: 70px;
+}
+.textExtra{
+	position: absolute;
+	left: 30px;
+}
+.facebookBanner{
+	position: absolute;
+	left: 50px;
+	top: 120px;
+}
+.textSignEmail{
+	position: absolute;
+	left: 135px;
+	top: 170px;
+	font-size: 0.9em;
+	color: #AA99B1;
+}
+.mini_container {
+	width: 400px;
+	height: 600px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	box-shadow: 0 0 10px black;
+}
+fieldset{
+	margin-top: 200px; 
+}
+.input{
+	box-sizing: border-box;
+	padding: 5px;
+	display: block;
+	margin: 0 0 10px 50px;
+	width: 300px;
+	height: 40px;
+	border-radius: 2px;
+	border: 1px #AA99B1 solid;
+}
+.button{
+	padding: 5px;
+	width: 300px;
+	height: 40px;
+	margin: 15px 0 0 50px;
+	border-radius: 2px;
+	background-color: #AA99B1;
+	border:none;
+	box-shadow: 0 0 5px grey;
+	color: white;
+	font-size: 1.1em;
+}
+.tos{
+	position: absolute;
+	bottom: 50px;
+	left: 33px;
+	font-size: 0.8em;
+	color: #AA99B1;
+}
+.tosExtra{
+	position: absolute;
+	left: 55px;
+	top: 15px;
+}

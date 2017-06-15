@@ -1,15 +1,77 @@
-<!doctype html>
-<html lang="en">
+<!-- Skip to content
+This repository
+Search
+Pull requests
+Issues
+Gist
+ @WEBhicham
+ Sign out
+ Watch 3
+  Star 4
+  Fork 0 GitHugop/AnimeScreen
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Pulse  Graphs
+Branch: master Find file Copy pathAnimeScreen/home.html
+b61f6a9  7 days ago
+@GitHugop GitHugop Rename home.php to home.html
+1 contributor
+RawBlameHistory     
+57 lines (48 sloc)  1 KB
+<html> -->
+<!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <title>Welcome Home!</title>
+    <meta charset="utf-8">
 </head>
 <body>
-Welcome Home!
+<h1>Welcome</h1>
+<p>You have been successfully logged in.</p>
+<p>
+    <a href="logout.php">Log Out</a><br> <a href="change.php">Change Password</a><br> <a href="adm/adminpanel.php">Admin
+        Panel</a>
+
+</p>
+<p>
+    You registered on this website <strong>1 Month</strong> ago.
+</p>
+<p>
+</p>
+<pre></pre>
+<p>
+    Change display name:
+</p>
+<form action="home.php" method="POST">
+    <input name="newName" placeholder="New name">
+    <button>Change Name</button>
+</form>
+Post something:
+<form action="home.php" method="POST">
+    <input name="postMessage" placeholder="Hmm...">
+    <button>Post</button>
+</form>
+<p>
+</p>
+---
+
+  <div class="posts">
+
+    <strong>Hugo</strong> 2017-03-18 13:21:39<br>
+    @hugo ---<br>
+    <div class="post">This is a test post.</div>
+    <br>
+    <hr>
+
+</div>
+  
+<div class="posts">
+
+    <strong>Hugo</strong> 2017-03-18 13:21:39<br>
+    @hugo ---<br>
+    <div class="post">&amp;#128515;</div>
+    <br>
+    <hr>
+
+</div>
+
 </body>
 </html>
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help
