@@ -1,29 +1,5 @@
-.logo
 
-.tos
-	margin-top: 30px
-
-	p
-		font-size: 0.75em
-		color: #AA99B1
-		text-align: center
-
-.facebookBanner
-	margin-top: 30px
-
-form
-	margin-top: 20px
-
-.text
-	text-align: center
-	width: 300px
-	margin-top: 40px
-	line-height: 20px
-
-	@media screen and (max-width: 480px)
-		font-size: 0.9em
-
-.mini_container
+.container
 	padding-top: 40px
 	display: flex
 	flex-wrap: wrap
@@ -42,55 +18,56 @@ form
 
 	@media screen and (max-width: 480px)
 		height: 90vh
-		position: absolute
-		margin: auto
 		box-shadow: none
 
-.input
-	box-sizing: border-box
-	padding-left: 10px
-	margin-top: 10px
-	margin-bottom: 10px
-	display: block
-	color: #444
-	width: 100%
-	height: 40px
-	border-radius: 2px
-	background-color: white
-	border: 1px #AA99B1 solid
 
-	@media screen and (max-width: 480px)
-		box-sizing: border-box
-		padding: 5px
-		display: block
-		height: 40px
-		border-radius: 2px
-		border: 1px #AA99B1 solid
-
-.textExtra
-
-.textSignEmail
+.banner-facebook
 	margin-top: 30px
-	font-size: 0.9em
-	color: #AA99B1
+
+
+.text
+	text-align: center
+	width: 300px
+	margin-top: 40px
+	line-height: 20px
 
 	@media screen and (max-width: 480px)
-		font-size: 0.8em
+		font-size: 0.9em
+
+	&--email
+		margin-top: 30px
+		font-size: 0.9em
 		color: #AA99B1
 
-.button
-	width: 100%
-	margin-top: 30px
-	padding: 5px
-	height: 40px
-	border-radius: 2px
-	background-color: #AA99B1
-	border: none
-	box-shadow: 0 0 5px grey
-	color: white
-	font-size: 1.1em
+	&--tos
+		margin-top: 25px
+		font-size: 0.75em
+		color: #AA99B1
+		text-align: center
 
-	@media screen and (max-width: 480px)
+.form-registration
+	margin-top: 20px
+
+	.input
+		box-sizing: border-box
+		padding-left: 10px
+		margin-top: 10px
+		margin-bottom: 10px
+		display: block
+		height: 40px
+		color: #444
+		width: 100%
+		border-radius: 2px
+		background-color: white
+		border: 1px #AA99B1 solid
+
+		@media screen and (max-width: 480px)
+			box-sizing: border-box
+			border-radius: 2px
+
+	.button
+		width: 100%
+		margin-top: 30px
 		padding: 5px
 		height: 40px
 		border-radius: 2px
