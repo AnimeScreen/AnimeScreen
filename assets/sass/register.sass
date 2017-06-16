@@ -3,6 +3,11 @@
 	position: absolute
 	top: 30px
 
+	@media screen and (max-width: 480px)
+		position: absolute
+		left: 34px
+		top: 0
+
 .tos
 	position: absolute
 	bottom: 50px
@@ -10,10 +15,57 @@
 	font-size: 0.8em
 	color: #AA99B1
 
+	@media screen and (max-width: 480px)
+		position: absolute
+		top: 500px
+		left: 10px
+		font-size: 0.74em
+		color: #AA99B1
+
+	@media screen and (min-height: 640px)
+		position: absolute
+		bottom: 60px
+		left: 0
+		font-size: 0.74em
+		color: #AA99B1
+
+	@media screen and (min-height: 700px)
+		position: absolute
+		bottom: 130px
+		left: 0
+		font-size: 0.74em
+		color: #AA99B1
+
+.tosExtra
+	position: absolute
+	left: 55px
+	top: 15px
+
+	@media screen and (max-width: 480px)
+		position: absolute
+		left: 50px
+		top: 15px
+
+	@media screen and (min-height: 640px)
+		position: absolute
+		left: 50px
+		top: 15px
+
+	@media screen and (min-height: 700px)
+		position: absolute
+		left: 50px
+		top: 15px
+
 .text
 	position: absolute
 	left: 70px
 	top: 70px
+
+	@media screen and (max-width: 480px)
+		position: absolute
+		left: 32px
+		top: 40px
+		font-size: 0.9em
 
 .mini_container
 	width: 400px
@@ -26,13 +78,19 @@
 	margin: auto
 	box-shadow: 0 0 10px black
 
+	@media screen and (max-width: 480px)
+		width: 300px
+		height: 90vh
+		position: absolute
+		top: 10vh
+		margin: auto
+		box-shadow: none
+
 fieldset
 	margin-top: 200px
 
-.tosExtra
-	position: absolute
-	left: 55px
-	top: 15px
+	@media screen and (max-width: 480px)
+		margin-top: 170px
 
 .input
 	box-sizing: border-box
@@ -44,13 +102,32 @@ fieldset
 	border-radius: 2px
 	border: 1px #AA99B1 solid
 
+	@media screen and (max-width: 480px)
+		box-sizing: border-box
+		padding: 5px
+		display: block
+		margin: 0 0 10px 0
+		width: 300px
+		height: 40px
+		border-radius: 2px
+		border: 1px #AA99B1 solid
+
 .textExtra
 	position: absolute
 	left: 30px
 
+	@media screen and (max-width: 480px)
+		position: absolute
+		left: 25px
+
 .container
 	height: 100%
 	width: 100%
+
+	@media screen and (max-width: 480px)
+		width: 100vw
+		height: 100vh
+		overflow: scroll
 
 .textSignEmail
 	position: absolute
@@ -58,6 +135,13 @@ fieldset
 	top: 170px
 	font-size: 0.9em
 	color: #AA99B1
+
+	@media screen and (max-width: 480px)
+		position: absolute
+		left: 91px
+		top: 150px
+		font-size: 0.8em
+		color: #AA99B1
 
 .button
 	padding: 5px
@@ -71,73 +155,7 @@ fieldset
 	color: white
 	font-size: 1.1em
 
-.facebookBanner
-	position: absolute
-	left: 50px
-	top: 120px
-
-@media screen and (max-width: 480px)
-	.logo
-		position: absolute
-		left: 34px
-		top: 0
-
-	.tos
-		position: absolute
-		top: 500px
-		left: 0
-		font-size: 0.74em
-		color: #AA99B1
-
-	.text
-		position: absolute
-		left: 32px
-		top: 40px
-		font-size: 0.9em
-
-	.mini_container
-		width: 300px
-		height: 90vh
-		position: absolute
-		top: 10vh
-		margin: auto
-		box-shadow: none
-
-	fieldset
-		margin-top: 170px
-
-	.tosExtra
-		position: absolute
-		left: 50px
-		top: 15px
-
-	.input
-		box-sizing: border-box
-		padding: 5px
-		display: block
-		margin: 0 0 10px 0
-		width: 300px
-		height: 40px
-		border-radius: 2px
-		border: 1px #AA99B1 solid
-
-	.textExtra
-		position: absolute
-		left: 25px
-
-	.container
-		width: 100vw
-		height: 100vh
-		overflow: scroll
-
-	.textSignEmail
-		position: absolute
-		left: 91px
-		top: 150px
-		font-size: 0.8em
-		color: #AA99B1
-
-	.button
+	@media screen and (max-width: 480px)
 		padding: 5px
 		width: 300px
 		height: 40px
@@ -149,33 +167,12 @@ fieldset
 		color: white
 		font-size: 1.1em
 
-	.facebookBanner
+.facebookBanner
+	position: absolute
+	left: 50px
+	top: 120px
+
+	@media screen and (max-width: 480px)
 		position: absolute
 		left: 0
 		top: 90px
-
-@media screen and (min-height: 640px)
-	.tos
-		position: absolute;
-		bottom: 60px;
-		left: 0;
-		font-size: 0.74em;
-		color: #AA99B1;
-
-	.tosExtra
-		position: absolute;
-		left: 50px;
-		top: 15px;
-
-@media screen and (min-height: 700px)
-	.tos
-		position: absolute;
-		bottom: 130px;
-		left: 0;
-		font-size: 0.74em;
-		color: #AA99B1;
-
-	.tosExtra
-		position: absolute;
-		left: 50px;
-		top: 15px;
