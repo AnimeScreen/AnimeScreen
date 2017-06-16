@@ -1,33 +1,39 @@
-.container{
+.container {
 	height: 100%;
 	width: 100%;
 }
-.logo{
+
+.logo {
 	left: 85px;
 	position: absolute;
 	top: 30px;
 }
-.text{
+
+.text {
 	position: absolute;
 	left: 70px;
 	top: 70px;
 }
-.textExtra{
+
+.textExtra {
 	position: absolute;
 	left: 30px;
 }
-.facebookBanner{
+
+.facebookBanner {
 	position: absolute;
 	left: 50px;
 	top: 120px;
 }
-.textSignEmail{
+
+.textSignEmail {
 	position: absolute;
 	left: 135px;
 	top: 170px;
 	font-size: 0.9em;
 	color: #AA99B1;
 }
+
 .mini_container {
 	width: 400px;
 	height: 600px;
@@ -39,10 +45,12 @@
 	margin: auto;
 	box-shadow: 0 0 10px black;
 }
-fieldset{
+
+fieldset {
 	margin-top: 200px; 
 }
-.input{
+
+.input {
 	box-sizing: border-box;
 	padding: 5px;
 	display: block;
@@ -52,7 +60,8 @@ fieldset{
 	border-radius: 2px;
 	border: 1px #AA99B1 solid;
 }
-.button{
+
+.button {
 	padding: 5px;
 	width: 300px;
 	height: 40px;
@@ -64,14 +73,16 @@ fieldset{
 	color: white;
 	font-size: 1.1em;
 }
-.tos{
+
+.tos {
 	position: absolute;
 	bottom: 50px;
 	left: 33px;
 	font-size: 0.8em;
 	color: #AA99B1;
 }
-.tosExtra{
+
+.tosExtra {
 	position: absolute;
 	left: 55px;
 	top: 15px;
