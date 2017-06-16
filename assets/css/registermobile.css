@@ -1,9 +1,14 @@
-.container{
+fieldset {
+	margin-top: 170px; 
+}
+
+.container {
 	width: 100vw;
 	height: 100vh;
 	overflow: scroll;
 }
-.mini_container{
+
+.mini_container {
 	width: 300px;
 	height: 90vh;
 	position: absolute;
@@ -11,37 +16,40 @@
 	margin: auto;
 	box-shadow: none;
 }
+
 .logo {
 	position: absolute;
 	left: 34px;
 	top: 0;
 }
-.text{
+
+.text {
 	position: absolute;
 	left: 32px;
 	top: 40px;
 	font-size: 0.9em;
 }
-.textExtra{
+
+.textExtra {
 	position: absolute;
 	left: 25px;
 }
-.facebookBanner{
+
+.facebookBanner {
 	position: absolute;
 	left: 0;
 	top: 90px;
 }
-.textSignEmail{
+
+.textSignEmail {
 	position: absolute;
 	left: 91px;
 	top: 150px;
 	font-size: 0.8em;
 	color: #AA99B1;
 }
-fieldset{
-	margin-top: 170px; 
-}
-.input{
+
+.input {
 	box-sizing: border-box;
 	padding: 5px;
 	display: block;
@@ -51,7 +59,8 @@ fieldset{
 	border-radius: 2px;
 	border: 1px #AA99B1 solid;
 }
-.button{
+
+.button {
 	padding: 5px;
 	width: 300px;
 	height: 40px;
@@ -63,43 +72,51 @@ fieldset{
 	color: white;
 	font-size: 1.1em;
 }
-.tos{
+
+.tos {
 	position: absolute;
 	top: 500px;
 	left: 0;
 	font-size: 0.74em;
 	color: #AA99B1;
 }
-.tosExtra{
+
+.tosExtra {
 	position: absolute;
 	left: 50px;
 	top: 15px;
 }
+
 @media screen and (min-height: 640px) { 
-	.tos{
+	.tos {
 		position: absolute;
 		bottom: 60px;
 		left: 0;
 		font-size: 0.74em;
 		color: #AA99B1;
 	}
-	.tosExtra{
+
+	.tosExtra {
 		position: absolute;
 		left: 50px;
 		top: 15px;
 	}
+
 }
+
 @media screen and (min-height: 700px) { 
-	.tos{
+	.tos {
 		position: absolute;
 		bottom: 130px;
 		left: 0;
 		font-size: 0.74em;
 		color: #AA99B1;
 	}
-	.tosExtra{
+
+	.tosExtra {
 		position: absolute;
 		left: 50px;
 		top: 15px;
 	}
+
 }
