@@ -8,12 +8,10 @@
 		<title>Register an Account</title>
 	</head>
 	<body>
-		<div class="container container--registration">
+		<div class="container container--registration container--rounded">
 			<img class="logo" src="img/logo.svg">
-			<p class="text">Create an account to track, share and discover your favorite anime.</p>
+			<p class="text text--email">Create an account to track, share and discover your favorite anime.</p>
 			<form class="form form--registration">
-				<label for="nameInput"></label>
-				<input type="text" name="nameInput" placeholder="Name" class="input input--registration" id="nameInput">
 				<label for="usernameInput"></label>
 				<input type="text" name="usernameInput" placeholder="Username" class="input input--registration" id="usernameInput">
 				<label for="emailInput"></label>
@@ -22,6 +20,7 @@
 				<input type="password" name="passwordInput" placeholder="Password" class="input input--registration" id="passwordInput">
 				<label for="passwordVerifyInput"></label>
 				<input type="password" name="passwordVerifyInput" placeholder="Retype Password" class="input input--registration" id="passwordVerifyInput">
+				<div id="error-notification" class="text text--error">Invalid password/email/username!</div>
 				<button type="submit" class="button button--register">Register!</button>
 				<p class="text text--terms">By signing up you indicate that you have read and agree to<br>the Terms of Service and Private Policy</p>
 			</form>
