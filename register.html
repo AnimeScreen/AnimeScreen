@@ -1,33 +1,30 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" href="assets/css/main.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/register.css">
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-        <title>Register an Account</title>
-    </head>
-    <body>
-        <div class="container">
-            <img class="logo" src="img/logo.svg">
-            <p class="text">Create an account to track, share and discover your favorite anime.</p>
-            <img class="banner-facebook" src="img/FacebookBanner.png" alt="facebook banner">
-            <p class="text text--email">Or sign up with email</p>
-            <form class="form-registration">
-                <label for="nameInput"></label>
-                <input type="text" name="nameInput" placeholder="Name" class="input" id="nameInput">
-                <label for="usernameInput"></label>
-                <input type="text" name="usernameInput" placeholder="Username" class="input" id="usernameInput">
-                <label for="emailInput"></label>
-                <input type="email" name="emailInput" placeholder="Email" class="input" id="emailInput">
-                <label for="nicknameInput"></label>
-                <input type="password" name="passwordInput" placeholder="Password" class="input" id="passwordInput">
-                <label for="passwordVerifyInput"></label>
-                <input type="password" name="passwordVerifyInput" placeholder="Retype Password" class="input" id="passwordVerifyInput">
-                <button type="submit" class="button">Register!</button>
-                <p class="text text--tos">By signing up you indicate that you have read and agree to<br>the Terms of Service and Private Policy</p>
-            </form>
-        </div>
-    </body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<title>Register an Account</title>
+	</head>
+	<body>
+		<div class="container container--registration">
+			<img class="logo" src="img/logo.svg">
+			<p class="text">Create an account to track, share and discover your favorite anime.</p>
+			<form class="form form--registration">
+				<label for="nameInput"></label>
+				<input type="text" name="nameInput" placeholder="Name" class="input input--registration" id="nameInput">
+				<label for="usernameInput"></label>
+				<input type="text" name="usernameInput" placeholder="Username" class="input input--registration" id="usernameInput">
+				<label for="emailInput"></label>
+				<input type="email" name="emailInput" placeholder="Email" class="input input--registration" id="emailInput">
+				<label for="nicknameInput"></label>
+				<input type="password" name="passwordInput" placeholder="Password" class="input input--registration" id="passwordInput">
+				<label for="passwordVerifyInput"></label>
+				<input type="password" name="passwordVerifyInput" placeholder="Retype Password" class="input input--registration" id="passwordVerifyInput">
+				<button type="submit" class="button button--register">Register!</button>
+				<p class="text text--tos">By signing up you indicate that you have read and agree to<br>the Terms of Service and Private Policy</p>
+			</form>
+		</div>
+	</body>
 </html>
