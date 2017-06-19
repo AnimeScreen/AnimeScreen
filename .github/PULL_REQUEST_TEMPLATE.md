@@ -4,15 +4,16 @@
 **Describe this PR:**
 
 
-**What kind of change does this PR introduce?** (check at least one)
+**What kind of change does this PR introduce?** (tick at least one)
 
-- [ ] Bugfix
+- [ ] Bug fix
 - [ ] Feature
 - [ ] Documentation
-- [ ] Refactor
+- [ ] Refactoring
+- [ ] Markup
 - [ ] Style
-- [ ] Build-related changes
-- [ ] Other, please describe:
+- [ ] Build
+- [ ] Other (please describe):
 
 **Other information:**
 

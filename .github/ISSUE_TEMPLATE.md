@@ -1,15 +1,15 @@
 <!-- ISSUE TEMPLATE -->
 <!-- (Update "[ ]" to "[x]" to check a box) -->
 
-**Select your issue type:** (check at least one)
+**Select your issue type:** (tick at least one)
 - [ ] Bug
 - [ ] Question
 - [ ] Suggestion
-- [ ] Other, please describe:
+- [ ] Other (please describe):
 
 
-**Desribe your issue:**
+**Describe your issue:**
 
 
-**Suggested Fix:**
+**Suggested fix:**
 
