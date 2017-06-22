@@ -1,0 +1,19 @@
+{
+  "name": "AnimeScreen",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnimeScreen/AnimeScreen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AnimeScreen/AnimeScreen/issues"
+  },
+  "homepage": "https://github.com/AnimeScreen/AnimeScreen#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.4.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  }
+}

@@ -25,6 +25,10 @@
 
 *.iws
 
+# Build
+node_modules/
+assets/css/
+
 # IntelliJ
 /out/
 
