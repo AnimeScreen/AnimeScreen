@@ -1,79 +1,11 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+
 /*/////////*/
 /*index css*/
 /*/////////*/
-.container {
-	width: 100vw;
-	height: 100vh;
-	font-family: 'Lato', sans-serif;
-	overflow: hidden;
-	box-sizing: border-box;
-	display: flex;
-	flex-direction: column;
-}
-.container--background {
-	background: url(../img/background.jpg) no-repeat center center;
-	background-size: cover;
-}
 /*////////*/
 /*menu css*/
 /*////////*/
-.mobile__nav--button {
-	display: none;
-}
-.header {
-	width: 100vw;
-	flex: 1;
-}
-.header__nav{
-	width: 100vw;
-	height: auto;
-	display: flex;
-	flex-wrap: wrap;
-}
-.nav__items--left {
+/* .nav__items--left {
 	flex: 10;
 	height: 100%;
 	display:flex;
@@ -89,8 +21,8 @@ table {
 	flex-wrap: wrap;
 	margin-top: 1em;
 	margin-right: 4em;
-}
-.link--white {
+} */
+/* .link--white {
 	text-decoration: none;
 	color: white;
 	margin-left: 1em;
@@ -105,16 +37,16 @@ table {
 }
 .link--enabled:hover{
 	opacity: 1;
-}
-.link--button {
+} */
+/* .link--button {
 	border:2px white solid;
 	border-radius: 4px;
 	padding: 4px 15px;
-}
+} */
 /*//////////////////*/
 /*middle section css*/
 /*//////////////////*/
-.section--top{
+/* .section--top{
 	width: 100%;
 	flex: 10;
 	color: white;
@@ -124,8 +56,8 @@ table {
 }
 .landing__introduction {
 	line-height: 3em;
-}
-.title--big {
+} */
+/* .title--big {
 	font-size: 2.5em;
 	font-weight: 700;
 }
@@ -139,8 +71,8 @@ table {
 	text-align: center;
 	border-radius: 5px;
 	margin-top: 2em;
-}
-.button {
+} */
+/* .button {
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -148,15 +80,15 @@ table {
 	text-decoration: none;
 	color: white;
 	font-weight: 700;
-}
+} */
 /*////////////*/
 /*social media*/
 /*////////////*/
-.section--bottom{
+/* .section--bottom{
 	width: 250px;
 	flex: 1;
-}
-.landing__social-links{
+} */
+/* .landing__social-links{
 	margin-left: 5em;
 }
 .social--links__introduction {
@@ -169,17 +101,17 @@ table {
 }
 .social--links{
 	margin-bottom: 1em;
-}
-.icon {
+} */
+/* .icon {
 	opacity: 0.7;
 }
 .icon:hover {
 	opacity: 1;
-}
+} */
 /*//////////*/
 /*mobile css*/
 /*//////////*/
-@media screen and (max-width: 775px){
+/* @media screen and (max-width: 775px){
 	.mobile__nav--button {
 		display: block;
 		background: url(../img/icons/icon-burger.svg)  no-repeat;
@@ -195,14 +127,13 @@ table {
 	.header__nav {
 		width: 50vw;
 		height: 100vh;
-		display: none;
-		flex-wrap: wrap;
+		display: flex;
 		flex-direction: column;
-		justify-content: flex-end;
 		background:white;
 		text-align: center;
 		position: fixed;
 		right: 0;
+		z-index: 99;
 	}
 	.nav__item{
 		width: 100%;
@@ -234,4 +165,8 @@ table {
 		flex-wrap: wrap;
 		margin: 0;
 	}
-}
+	.nav__item--logo {
+		border-bottom: 1px solid #A68CB1;
+		margin-top: 50px;
+	}
+} */
