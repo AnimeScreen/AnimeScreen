@@ -1,23 +1,52 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="/assets/css/main.css">
-        <title>Login</title>
-    </head>
-    <body>
-    <h1>Login</h1>
-    <form class="pure-form pure-form-stacked">
-        <fieldset>
-            <label for="usernameInput">Username/Email:</label>
-            <input type="text" name="usernameInput" id="usernameInput">
-            <label for="passwordInput">Password:</label>
-            <input type="password" name="passwordInput" id="passwordInput">
-            <label for="isRemembered">Remember me:</label>
-            <input type="checkbox" name="isRemembered" id="isRemembered">
-        </fieldset>
-        <button type="submit" class="pure-button pure-button-primary">Register account!</button>
-    </form>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>Register an Account</title>
+</head>
+<body>
+    <div class="container container--registration">
+        <nav class="navRegistration navRegistration--main">
+            <img class="logo logo--menu" src="assets/img/logo.svg">
+            <ol class="navRegistration navRegistration--menu">
+                <li><a href="">Browse</a></li>
+                <li><a href="">Trending</a></li>
+                <li><a href="">Library</a></li>
+                <li><a href="">Community</a></li>
+                <li><a href="">Chat</a></li>
+            </ol>
+            <div class="navRegistration navRegistration--switch">
+                <div class="navRegistration navRegistration--log__login">
+                    <a href="login.html">Login</a>
+                </div>
+                <div class="navRegistration navRegistration--log__register">
+                    <a href="register.html">Register</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container container--background">
+            <div class="loginContainer">
+
+                <img class="logo" src="assets/img/logo.svg">
+                <p class="text text--email">Create an account to track, share and discover your favorite anime.</p>
+                <form class="form form--registration">
+                    <label for="usernameInput"></label>
+                    <input type="text" name="usernameInput" placeholder="Username" class="input input--registration" id="usernameInput">
+
+                    <label for="passwordInput"></label>
+                    <input type="password" name="passwordInput" placeholder="Password" class="input input--registration" id="passwordInput">
+
+                    <!--<div id="error-notification" class="text text&#45;&#45;error">Invalid password/username!</div>-->
+
+                    <button type="submit" class="button button--submit">LOGIN</button>
+
+                    <p class="text text--terms">By signing up you indicate that you have read and agree to the Terms of Service and Private Policy</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
