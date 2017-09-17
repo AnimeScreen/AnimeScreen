@@ -12,11 +12,15 @@
     overflow: hidden
     width: 100vw
 
-  &--rounded
-    border-radius: 5px
-
   &--registration
-    margin-top: 15vh
+
+
+    @media screen and (max-width: 480px)
+      height: 90vh
+      box-shadow: none
+
+.loginContainer
+    margin: 15vh auto auto auto
     padding-top: 40px
     padding-bottom: 20px
     display: flex
@@ -24,9 +28,5 @@
     justify-content: center
     align-items: flex-start
     align-content: flex-start
-    //width: 400px
-    box-shadow: 0 0 10px rgba(0, 0, 0, .30)
-
-    @media screen and (max-width: 480px)
-      height: 90vh
-      box-shadow: none
+    width: 400px
+    background-color: transparent

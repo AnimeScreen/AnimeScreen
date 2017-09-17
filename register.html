@@ -8,31 +8,34 @@
 	<title>Register an Account</title>
 </head>
 <body>
-	<div class="container container--registration container--rounded">
-        <nav class="see">
+	<div class="container container--registration">
+		<nav class="see">
 
-        </nav>
-		<img class="logo" src="assets/img/logo.svg">
-		<p class="text text--email">Create an account to track, share and discover your favorite anime.</p>
-		<form class="form form--registration">
-			<label for="usernameInput"></label>
-			<input type="text" name="usernameInput" placeholder="Username" class="input input--registration" id="usernameInput">
+		</nav>
+		<div class="loginContainer">
 
-			<label for="emailInput"></label>
-			<input type="email" name="emailInput" placeholder="Email" class="input input--registration" id="emailInput">
+			<img class="logo" src="assets/img/logo.svg">
+			<p class="text text--email">Create an account to track, share and discover your favorite anime.</p>
+			<form class="form form--registration">
+				<label for="usernameInput"></label>
+				<input type="text" name="usernameInput" placeholder="Username" class="input input--registration" id="usernameInput">
 
-			<label for="passwordInput"></label>
-			<input type="password" name="passwordInput" placeholder="Password" class="input input--registration" id="passwordInput">
+				<label for="emailInput"></label>
+				<input type="email" name="emailInput" placeholder="Email" class="input input--registration" id="emailInput">
 
-			<label for="passwordVerifyInput"></label>
-			<input type="password" name="passwordVerifyInput" placeholder="Retype Password" class="input input--registration" id="passwordVerifyInput">
+				<label for="passwordInput"></label>
+				<input type="password" name="passwordInput" placeholder="Password" class="input input--registration" id="passwordInput">
 
-			<div id="error-notification" class="text text--error">Invalid password/email/username!</div>
+				<label for="passwordVerifyInput"></label>
+				<input type="password" name="passwordVerifyInput" placeholder="Retype Password" class="input input--registration" id="passwordVerifyInput">
 
-			<button type="submit" class="button button--submit">Register!</button>
+				<div id="error-notification" class="text text--error">Invalid password/email/username!</div>
 
-			<p class="text text--terms">By signing up you indicate that you have read and agree to the Terms of Service and Private Policy</p>
-		</form>
+				<button type="submit" class="button button--submit">Register!</button>
+
+				<p class="text text--terms">By signing up you indicate that you have read and agree to the Terms of Service and Private Policy</p>
+			</form>
+		</div>
 	</div>
 </body>
 </html>
