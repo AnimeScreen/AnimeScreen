@@ -3,22 +3,19 @@
     .nav__items
       &--home
         &_left
-          flex: 10
-          height: 100%
           display: flex
           flex-direction: row
           flex-wrap: wrap
-          margin-top: 1em
-
+          height: 100%
+          margin-top: 2em
         &_right
           display: flex
-          flex: 4
           flex-wrap: wrap
           height: 100%
           justify-content: flex-end
           margin-right: 4em
-          margin-top: 1em
-
+          margin-top: -1em //this lines the 2 parts of the menus up. DON'T TOUCH IT!
+        
   &--main
     display: flex
     width: 100vw
@@ -47,7 +44,6 @@
         height: 120px
         width: 100%
       .nav__item
-
         &--login
           flex: 1
           text-align: center
@@ -61,17 +57,17 @@
               border: solid #A68CB1 2px
               padding: 8px 16px
               border-radius: 5px
+
         &--register
           flex: 1
           text-align: center
           margin-right: 50px
-
+          
           &_active
             flex: 1
             text-align: center
             height: 30px
-
             a
               border: solid #A68CB1 2px
               padding: 8px 16px
-              border-radius: 5px
+              border-radius: 5px  
