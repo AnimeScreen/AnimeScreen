@@ -55,4 +55,35 @@
 	</div>
 </body>
 <script src="assets/js/qubi.js"></script>
+<script>
+    //adding something after it 
+    function after(selectorElement, createElement, newClass){
+        const afterElement = document.querySelectorAll(selectorElement)[0];
+        const newElement = document.createElement(createElement);
+        newElement.classList.add(newClass);
+        afterElement.parentNode.insertBefore(newElement, afterElement.nextSibling);
+    };
+    //the remove something 
+    Element.prototype.remove = function() {
+        this.parentElement.removeChild(this);
+    };
+
+    NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
+        for(var i = this.length - 1; i >= 0; i--) {
+            if(this[i] && this[i].parentElement) {
+                this[i].parentElement.removeChild(this[i]);
+            }
+        }
+    };
+    //script to do stuff
+    const progress = document.querySelectorAll("#strength"); 
+    progress[0].addEventListener("mouseover" ,function(){
+        after("#strength", "div", "safepassword");
+    });
+
+    progress[0].addEventListener("mouseout" ,function(){
+        const safepassword = document.querySelectorAll(".safepassword");
+        safepassword[0].remove();
+    });
+</script>
 </html>
