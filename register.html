@@ -54,7 +54,7 @@
 		</div>
 	</div>
 </body>
-<script src="assets/js/qubi.js"></script>
+<script src="./node_modules/qubi/qubi.js"></script>
 <script>
     //adding something after it 
     function after(selectorElement, createElement, newClass){
@@ -63,7 +63,14 @@
         newElement.classList.add(newClass);
         afterElement.parentNode.insertBefore(newElement, afterElement.nextSibling);
     };
-
+    
+    var strength = document.getElementById("strength");
+    var passInput = document.getElementById("passwordInput");
+    strength.value = 0;
+    strength.max = Qubi.totalScore;
+    passInput.addEventListener("keyup", function () {
+        strength.value = Qubi.checkPassword(passInput.value);
+    });
     //script to do stuff
     const progress = document.querySelectorAll("#strength"); 
     progress[0].addEventListener("mouseover" ,function(){
