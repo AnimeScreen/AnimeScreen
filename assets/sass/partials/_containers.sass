@@ -1,21 +1,32 @@
 .container
-	margin: auto
-	margin-top: 15vh
+  margin: auto
 
-	&--rounded
-		border-radius: 5px
+  &--home
+    background: url(../img/background.jpg) no-repeat center center
+    background-size: cover
+    box-sizing: border-box
+    display: flex
+    flex-direction: column
+    font-family: 'Lato', sans-serif
+    height: 100vh
+    overflow: hidden
+    width: 100vw
 
-	&--registration
-		padding-top: 40px
-		padding-bottom: 20px
-		display: flex
-		flex-wrap: wrap
-		justify-content: center
-		align-items: flex-start
-		align-content: flex-start
-		width: 400px
-		box-shadow: 0 0 10px rgba(0,0,0,0.30)
+  &--rounded
+    border-radius: 5px
 
-		@media screen and (max-width: 480px)
-			height: 90vh
-			box-shadow: none
+  &--registration
+    margin-top: 15vh
+    padding-top: 40px
+    padding-bottom: 20px
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: flex-start
+    align-content: flex-start
+    width: 400px
+    box-shadow: 0 0 10px rgba(0, 0, 0, .30)
+
+    @media screen and (max-width: 480px)
+      height: 90vh
+      box-shadow: none

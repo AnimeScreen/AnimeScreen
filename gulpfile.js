@@ -12,7 +12,7 @@ gulp.task('sass', function () {
         cascade: false
       }))
       .pipe(gulp.dest('assets/css'));
-});
+})
 
 // Use this to watch all the sass files and compile
 // them to css automatically when changed.

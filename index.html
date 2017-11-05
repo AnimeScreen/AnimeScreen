@@ -6,86 +6,104 @@
 	content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"> 
 	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/style/index.css">
 	<title>Welcome! | AnimeScreen</title>
 </head>
 <body>
-	<header class="header header--landing">
-		<nav class="header__nav">
-			<!-- Section for page links. -->
-			<ul class="nav__items nav__items--left">
-				<li class="nav__item">
-					<a class="link link--white link--brand" href="#">AnimeScreen</a>
-				</li>
+	<div class="container container--home">	
+		<header class="header header--landing">
+			<div class="mobile mobile--button"></div>
+			<nav class="header__nav">
+				<!-- Section for page links. -->
+				<ul class="nav__items nav__items--left">
+					<li class="nav__item nav__item--logo">
+						<a class="link link--white link--brand" href="#">Animescreen</a>
+					</li>
+					
+					<li class="nav__item">
+						<a class="link link--white link--enabled" href="#">Home</a>
+					</li>
 
-				<li class="nav__item">
-					<a class="link link--white" href="#">Home</a>
-				</li>
+					<li class="nav__item">
+						<a class="link link--white link--enabled" href="#">Anime</a>
+					</li>
 
-				<li class="nav__item">
-					<a class="link link--white" href="#">Anime</a>
-				</li>
+					<li class="nav__item">
+						<a class="link link--white link--enabled" href="#">Community</a>
+					</li>
 
-				<li class="nav__item">
-					<a class="link link--white" href="#">Community</a>
-				</li>
+					<li class="nav__item">
+						<a class="link link--white link--enabled" href="#">Group</a>
+					</li>
 
-				<li class="nav__item">
-					<a class="link link--white" href="#">Group</a>
-				</li>
+					<li class="nav__item">
+						<a class="link link--white link--enabled" href="#">Chat</a>
+					</li>
+				</ul>
 
-				<li class="nav__item">
-					<a class="link link--white" href="#">Chat</a>
-				</li>
-			</ul>
+				<!-- Section for user links. -->
+				<ul class="nav__items nav__items--right">
+						<li class="nav__item">
+						<a class="link link--white link--enabled" href="#">Login</a>
+					</li>
+					<li class="nav__item nav__item--button">
+						<a class="link link--white link--enabled link--button" href="#">Register</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 
-			<!-- Section for user links. -->
-			<ul class="nav__items nav__items--right">
-				<li class="nav__item">
-					<a class="link link--white" href="#">Login</a>
-				</li>
-				<li class="nav__item">
-					<a class="link link--white link--button" href="#">Register</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
-
-	<!-- Landing page text. -->
-	<section class="section">
-		<div class="section__landing">
-			<div class="landing__introduction">
-				<h1 class="title title--big">Sassier place for the Anime community</h1>
-				<p>Track, share and discover your favourite anime.</p>
+		<!-- Landing page text. -->
+		<section class="section section--top">
+			<div class="section__landing">
+				<div class="landing__introduction">
+					<h1 class="title title--big">Sassier place for the<br>Anime community</h1>
+					<p class="subtext">Track, share and discover your favourite anime.</p>
+				</div>
+				<div class="landing__invitation">
+					<a class="button button--join" href="#">Join the Community</a>
+				</div>	
 			</div>
-			<div class="landing__invitation">
-				<a class="button button--submit" href="#">Join the Community</a>
-			</div>
-		</div>
-	</section>
+		</section>
 
-	<!-- Social media links. -->
-	<section class="section section--bottom">
-		<div class="landing__social-links">
-			<p class="social-links__introduction">Our other (social) bases:</p>
-			<ul class="social-links__items">
-				<li class="social-item">
-					<a class="icon icon--facebook" href="#">Facebook</a>
-				</li>
-				<li class="social-item">
-					<a class="icon icon--twitter" href="#">Twitter</a>
-				</li>
-				<li class="social-item">
-					<a class="icon icon--twitter" href="#">Google+</a>
-				</li>
-				<li class="social-item">
-					<a class="icon icon--twitter" href="#">YouTube</a>
-				</li>
-				<li class="social-item">
-					<a class="icon icon--twitter" href="#">Medium</a>
-				</li>
-			</ul>
-		</div>
-	</section>
+		<!-- Social media links. -->
+		<section class="section section--bottom">
+			<div class="landing__social-links">
+				<p class="social--links social--links__introduction">Our other (social) bases:</p>
+				<ul class="social--links social--links__items"> <!--changed it from - to -- -->
+					<li class="social__item"> <!-- changed it from - to __ -->
+						<a class="icon icon--facebook" href="#"><img src="assets/img/icons/Facebook.svg"></a>
+					</li>
+					<li class="social__item">
+						<a class="icon icon--twitter" href="#"><img src="assets/img/icons/Twitter.svg"></a>
+					</li>
+					<li class="social__item">
+						<a class="icon icon--google" href="#"><img src="assets/img/icons/Google.svg"></a>
+					</li>
+					<li class="social__item">
+						<a class="icon icon--Medium" href="#"><img src="assets/img/icons/Medium.svg"></a>
+					</li>
+					<li class="social__item">
+						<a class="icon icon--Youtube" href="#"><img src="assets/img/icons/Youtube.svg"></a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</div>
 </body>
+<script type="text/javascript">
+	var menuButton =  document.querySelectorAll(".mobile__nav--button");
+	var menu = document.querySelectorAll(".header__nav");
+
+	function menuSwitch(val) {
+	    console.log(val.style.display);
+	    if (val.style.display === ""){
+	        val.style.display = "flex";
+	    }
+	}
+
+	menuButton[0].addEventListener("click" ,function () {menuSwitch(menu[0])});
+</script>
 </html>
