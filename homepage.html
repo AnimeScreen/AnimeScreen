@@ -1,28 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport"
-		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="assets/css/main.css">
-	<title>Welcome! | AnimeScreen</title>
-</head>
-<body>
-	<nav class="nav__header nav__header--main">
-		<a href="index.html"><img class="logo logo--menu" src="assets/img/logo.svg"></a>
-		<ol class="nav__items nav__items--left">
-			<li><a href="">Browse</a></li>
-			<li><a href="">Trending</a></li>
-			<li><a href="">Library</a></li>
-			<li><a href="">Community</a></li>
-			<li><a href="">Chat</a></li>
-		</ol>
-		<ol class="nav__items nav__items--right">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+        <link rel="stylesheet" href="assets/css/main.css">
+        <title>Welcome! | AnimeScreen</title>
+    </head>
+    <body>
+        <nav class="nav__header nav__header--main">
+            <a href="index.html"><img class="logo logo--menu" src="assets/img/logo.svg"></a>
+            <ul class="nav__items nav__items--left">
+                <li><a href="">Browse</a></li>
+                <li><a href="">Trending</a></li>
+                <li><a href="">Library</a></li>
+                <li><a href="">Community</a></li>
+                <li><a href="">Chat</a></li>
+            </ul>
+            <ul class="nav__items nav__items--right">
+                <li class="icon"></li>
+                <li class="icon"></li>
+                <li class="icon"></li>
+                <li class="button__profile">
+                    <div class="avatar"></div>
+                    <p class="name"></p>
+                </li>
+            </ul>
+        </nav>
 
-		</ol>
-	</nav>
-</body>
+        <div class="container__homepage">
+            <!-- left side of the page -->
+            <section class="section__homepage--left">
+                <!-- container(wrap) in the left side of the page -->
+                <div class="section__left--wrap border-5">
+                    <div class="section__left--header">
+                        <div class="avatar"></div>
+                        <p class="name">Dimitiri</p>
+                        <p class="motto">Traversing the stars, not elon enough</p>
+                        <div class="section__left--littlewrap">
+                            <p class="followers">18.3k followers</p>
+                            <p class="posts">3.6k posts</p>
+                        </div>
+                    </div>
+                    <div class="section__left--community">
+                        <p class="title">Community</p>
+                        <div class="community">
+                            <img class="community__img" src="assets/img/red.png" alt="#">
+                            <div class="community__name"> Animescreen </div>
+                        </div>  
+                        <div class="community">
+                            <img class="community__img" src="assets/img/red.png" alt="#">
+                            <div class="community__name"> Animescreen </div>
+                        </div>   
+                        <div class="community">
+                            <img class="community__img" src="assets/img/red.png" alt="#">
+                            <div class="community__name"> Animescreen </div>
+                        </div> 
+                        <div class="community">
+                            <img class="community__img" src="assets/img/red.png" alt="#">
+                            <div class="community__name"> Animescreen </div>
+                        </div> 
+                    </div>
+                    <div class="section__left--chat">
+                        <p class="title">Chat</p>
+                        <div class="chat">
+                            <img src="assets/img/red.png" class="chat__img">
+                            <div class="chat__name">Miko</div>
+                        </div>
+                        <div class="chat">
+                            <img src="assets/img/red.png" class="chat__img">
+                            <div class="chat__name">Dao</div>
+                        </div>
+                        <div class="chat">
+                            <img src="assets/img/red.png" class="chat__img">
+                            <div class="chat__name">Sakashi</div>
+                        </div>
+                        <div class="chat">
+                            <img src="assets/img/red.png" class="chat__img">
+                            <div class="chat__name">Hikari</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section__left--followers border-5">
+                    <p class="title">Followers</p>
+                    <div class="container">
+                        <img src="#" class="follower">
+                        <img src="#" class="follower">
+                        <img src="#" class="follower">
+                        <img src="#" class="follower">
+                        <img src="#" class="follower">
+                        <img src="#" class="follower">
+                        <img src="#" class="follower">
+                        <img src="#" class="follower">
+                        <img src="#" class="follower">
+                    </div>
+                </div>
+            </section>
+            <!-- right side of the page -->
+            <section class="section__homepage--right">
+                <a href="#" class="section__right--newpost border-5">
+                    <p class="text--newpost">Create new post</p>
+                </a>
+                <div class="section__right--review border-5">
+                    <div class="wrapper">
+                        <a href="#" class="button--review button--title">Feeling</a>
+                        <p class="author">Dimitiri</p>    
+                        <p class="content">Really love Attack on Titan S2 <span class="tag">#nakedtitan</span><span class="tag"> #titan</span></p>
+                        <img class="rating" src="assets/img/rating.png">
+                    </div>
+                    <img src="assets/img/red.png" alt="" class="image">
+                </div>
+                <div class="section__right--stream border-5">
+                    <div class="wrapper">
+                        <a href="#" class="button button--title">Streaming</a>
+                        <p class="author">Kawai Riko</p>
+                        <p class="content">Riko is currently streaming AOT</p>
+                    </div>  
+                </div>
+                <div class="section__right--message border-5">
+                    <a href="#" class="button button--title button-blue">Waifu</a>
+                    <p class="author">Rentaro Kun</p>
+                    <p class="content">Looking for waifu to play with <span class="tag">#wifuForFree</span></p>
+                </div>
+                <div class="section__right--message border-5">
+                    <a href="#" class="button button--title button-darkpurple">Sad</a>
+                    <p class="author">Sammy</p>
+                    <p class="content">My teacher is gettin gmarried T-T <span class="tag">#meSad</span> </p>
+                </div>
+            </section>
+        </div>
+    </body>
 </html>

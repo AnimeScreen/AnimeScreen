@@ -1,7 +1,6 @@
 .section
-
   &--top
-    color: #fff
+    color: $white
     flex: 10
     width: 100%
 
@@ -12,16 +11,262 @@
   &__landing
     margin: 13em 0 0 5em
 
+  &__homepage
+    &--left
+      height: auto
+      margin: 3em 0 0
+      width: auto
+
+    &--right
+      height: auto
+      margin: 3em 0 0
+      width: 600px
+
+  &__left
+    &--wrap
+      background: $white
+      +shadow
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      height: auto
+      width: 550px
+
+    &--littlewrap
+      color: rgba($home-color, .8)
+      display: flex
+      flex: 2
+      flex-direction: row
+      flex-wrap: wrap
+      margin-top: 1.5em
+
+      .followers
+        margin-left: 19px
+
+        &::before
+          background: url('../img/icons/followers.png') no-repeat
+          content: ''
+          height: 31px
+          margin-left: -21px
+          margin-top: -5px
+          position: absolute;
+          width: 21px
+
+      .posts
+        &::before
+          background: url('../img/icons/posts.png') no-repeat
+          content: ''
+          height: 35px
+          margin-left: -35px
+          margin-top: -5px
+          position: absolute;
+          width: 32px
+
+    &--header
+      border-bottom: 1px solid rgba($primary-color, .5)
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      height: 220px
+      padding: 3.5em 4em 2em
+      width: 100%
+
+      .avatar
+        background: red
+        border-radius: 50px
+        height: 100px
+        margin-right: 20px
+        width: 100px
+
+      .name
+        font-size: 2em
+        font-weight: bold
+        margin-bottom: 10px
+        width: calc(100% - 120px)
+
+      .motto
+        color: $home-color
+        font-size: 1em
+        margin-bottom: -10px
+        width: calc(100% - 120px)
+
+      .posts
+        margin: 0 0 0 4em
+
+    &--community
+      border-right: 1px solid rgba($primary-color, .5)
+      height: 400px
+      width: 50%
+
+      .title
+        +title
+
+      .community
+        align-items: center
+        border-radius: 8px
+        color: #b9c8d8
+        display: flex
+        height: auto
+        margin-left: 3em
+        padding: 1rem
+        width: 200px
+
+        &:hover
+          background-color: #f4f4f4
+
+        &__img
+          border-radius: 50%
+          height: 40px
+          margin-right: 20px
+          width: 40px
+
+        &__name
+          flex: 1
+
+    &--chat
+      height: 400px
+      width: 50%
+
+      .title
+        +title
+
+      .chat
+        align-items: center
+        border-radius: 8px
+        color: #b9c8d8
+        display: flex
+        height: auto
+        margin-left: 3em
+        padding: 1rem
+        width: 200px
+
+        &:hover
+          background-color: #f4f4f4
+
+        &__img
+          border-radius: 50%
+          height: 40px
+          margin-right: 20px
+          width: 40px
+
+        &__name
+          flex: 1
+
+    &--followers
+      +shadow
+      height: 150px
+      margin: 50px 0
+      width: 550px
+
+      .title
+        color: $primary-color
+        font-size: 1.2em
+        padding: 2em 0 0 3em
+
+      .container
+        margin: 1em 0 0 3em
+
+        .follower
+          background-color: red
+          border-radius: 30px
+          height: 40px
+          margin-left: .5em
+          width: 40px
+
+  &__right
+    &--newpost
+      +shadow
+      display: block
+      height: 50px
+      text-decoration: none
+      width: 600px
+
+    &--review
+      +shadow
+      display: flex
+      flex-flow: column wrap
+      height: 200px
+      justify-content: space-between
+      margin-top: 2em
+      width: 100%
+
+      .wrapper
+        padding: 2em 0 0 1.2em
+        width: 66%
+
+      .author
+        font-size: 1.2em
+        margin-top: .5em
+
+      .content
+        font-size: .9em
+        margin: 1.3em 0
+
+      .rating
+        height: 50px;
+
+      .image
+        align-self: flex-end
+        height: 100%
+        width: 33%
+
+    &--stream
+      +shadow
+      align-items: flex-end
+      background-image: url('../img/red.png')
+      background-size: cover
+      display: flex
+      height: 300px
+      margin-top: 2em
+      width: 100%
+
+      .wrapper
+        display: flex
+        flex-flow: column wrap
+        height: 80px
+        justify-content: space-between
+        margin: 0 0 2em 2em
+
+      .button
+        font-weight: normal
+
+      .author
+        color: rgba($white, .7)
+        font-size: 1.2em
+
+      .content
+        color: rgba($white, .5)
+        font-size: .9em
+
+    &--message
+      +shadow
+      display: flex
+      flex-flow: column wrap
+      height: 150px
+      justify-content: space-around
+      margin-top: 2em
+      width: 100%
+      padding: 2em
+
+      .button
+        font-weight: normal
+
+      .author
+        font-size: 1.2em
+
+      .content
+        font-size: .9em
+
 .landing__introduction
   line-height: 3em
 
 .landing__invitation
   background-color: $primary-color
-  width: 180px
-  height: 30px
-  text-align: center
   border-radius: 5px
+  height: 30px
   margin-top: 2em
+  text-align: center
+  width: 180px
 
 .landing__social-links
   margin-left: 5em
@@ -31,7 +276,7 @@
     margin-bottom: 1em
 
     &__introduction
-      color: #fff
+      color: $white
       opacity: .7
       text-align: center
 
@@ -41,6 +286,6 @@
 
 .icon
   opacity: .7
-  
+
   &:hover
     opacity: 1

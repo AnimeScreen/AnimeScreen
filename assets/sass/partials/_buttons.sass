@@ -1,26 +1,44 @@
 .button
+  color: $white
   display: block
+  font-weight: 700
   height: 100%
   line-height: 30px
-  color: white
-  font-weight: 700
   text-decoration: none
   width: 100%
 
   &--submit
-    width: 100%
+    background-color: #AA99B1
+    border: 0
+    border-radius: 2px
+    box-shadow: 0 0 5px grey
+    color: $white
+    font-size: 1.1em
+    height: 40px
     margin-top: 15px
     padding: 5px
-    height: 40px
-    border-radius: 2px
-    background-color: #AA99B1
-    border: none
-    box-shadow: 0 0 5px grey
-    color: white
-    font-size: 1.1em
+    width: 100%
 
     &:hover
       background-color: $primary-color
 
     &:active
       background-color: #9C68B1
+
+  &--title
+    background-color: $primary-color
+    border-radius: 25px
+    color: $white
+    display: block
+    font-size: .9em
+    height: 25px
+    line-height: 25px
+    text-align: center
+    text-decoration: none
+    width: 90px
+
+  &-blue
+    background-color: #5C98E5
+
+  &-darkpurple
+    background-color: #9169E1

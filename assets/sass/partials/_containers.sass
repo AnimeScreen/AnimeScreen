@@ -1,8 +1,8 @@
 .container
   margin: auto
 
-  &--home
-    background: url(../img/background.jpg) no-repeat center center
+  &--index
+    background: url('../img/background.jpg') no-repeat center center
     background-size: cover
     box-sizing: border-box
     display: flex
@@ -14,28 +14,38 @@
 
   &--registration
     height: 100vh
-    width: 100vw
     overflow: hidden
-
-  &--background
-    height: 100vh
     width: 100vw
-    overflow: hidden
-    background: url(../img/backgroundregistration.jpg) no-repeat center center
-    background-size: cover
 
-    @media screen and (max-width: 480px)
-      height: 90vh
-      box-shadow: none
-
-.loginContainer
-    margin: 12vh auto auto auto
-    padding-top: 40px
-    padding-bottom: 20px
+  &__homepage
     display: flex
     flex-wrap: wrap
-    justify-content: center
-    align-items: flex-start
-    align-content: flex-start
-    width: 400px
-    background-color: transparent
+    font-family: 'Roboto', sans-serif
+    height: auto
+    justify-content: space-around
+    padding-bottom: 5em
+    width: 100vw
+
+  &--background
+    background: url(../img/backgroundregistration.jpg) no-repeat center center
+    background-size: cover
+    height: 100vh
+    overflow: hidden
+    width: 100vw
+
+    @media screen and (max-width: 480px)
+      box-shadow: none
+      height: 90vh
+
+
+.loginContainer
+  align-content: flex-start
+  align-items: flex-start
+  background-color: transparent
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  margin: 12vh auto auto
+  padding-bottom: 20px
+  padding-top: 40px
+  width: 400px
