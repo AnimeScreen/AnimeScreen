@@ -10,10 +10,16 @@
   },
   "homepage": "https://github.com/AnimeScreen/AnimeScreen#readme",
   "devDependencies": {
+    "eslint-config-airbnb-base": "^12.0.1",
+    "eslint-plugin-import": "^2.7.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
-    "gulp-clean-css": "^3.4.2",
+    "gulp-clean-css": "^3.9.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "qubi": "^1.1.1",
+    "sass-lint": "^1.12.1"
   }
 }

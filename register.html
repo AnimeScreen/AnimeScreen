@@ -8,28 +8,78 @@
 	<title>Register an Account</title>
 </head>
 <body>
-	<div class="container container--registration container--rounded">
-		<img class="logo" src="assets/img/logo.svg">
-		<p class="text text--email">Create an account to track, share and discover your favorite anime.</p>
-		<form class="form form--registration">
-			<label for="usernameInput"></label>
-			<input type="text" name="usernameInput" placeholder="Username" class="input input--registration" id="usernameInput">
+	<div class="container container--registration">
+		<nav class="nav__header nav__header--main">
+			<a href="index.html"><img class="logo logo--menu" src="assets/img/logo.svg"></a>
+			<ol class="nav__items nav__items--left">
+				<li><a href="">Browse</a></li>
+				<li><a href="">Trending</a></li>
+				<li><a href="">Library</a></li>
+				<li><a href="">Community</a></li>
+				<li><a href="">Chat</a></li>
+			</ol>
+			<ol class="nav__items nav__items--right">
+				<li class="nav__item nav__item--login">
+					<a href="login.html">Login</a>
+				</li>
+				<li class="nav__item nav__item--register nav__item--register_active">
+					<a href="register.html">Register</a>
+                </li>
+			</ol>
+		</nav>
+		<div class="container container--background">
+			<div class="loginContainer">
 
-			<label for="emailInput"></label>
-			<input type="email" name="emailInput" placeholder="Email" class="input input--registration" id="emailInput">
+				<img class="logo" src="assets/img/logo.svg">
+				<p class="text text--email">Create an account to track, share and discover your favorite anime.</p>
+				<form class="form form--registration">
+                    <label for="usernameInput"></label>
+                
+					<input type="text" name="usernameInput" placeholder="Username" class="input input--registration" id="usernameInput">
 
-			<label for="passwordInput"></label>
-			<input type="password" name="passwordInput" placeholder="Password" class="input input--registration" id="passwordInput">
+					<label for="emailInput"></label>
+					<input type="email" name="emailInput" placeholder="Email" class="input input--registration" id="emailInput">
 
-			<label for="passwordVerifyInput"></label>
-			<input type="password" name="passwordVerifyInput" placeholder="Retype Password" class="input input--registration" id="passwordVerifyInput">
+					<label for="passwordInput"></label>
+					<input type="password" name="passwordInput" placeholder="Password" class="input input--registration" id="passwordInput">
+                    <progress data-value="0" id="strength"></progress>
+					<label for="passwordVerifyInput"></label>
+					<input type="password" name="passwordVerifyInput" placeholder="Retype Password" class="input input--registration" id="passwordVerifyInput">
 
-			<div id="error-notification" class="text text--error">Invalid password/email/username!</div>
+					<button type="submit" class="button button--submit">REGISTER</button>
 
-			<button type="submit" class="button button--submit">Register!</button>
-
-			<p class="text text--terms">By signing up you indicate that you have read and agree to the Terms of Service and Private Policy</p>
-		</form>
+					<p class="text text--terms">By signing up you indicate that you have read and agree to the Terms of Service and Private Policy</p>
+				</form>
+			</div>
+		</div>
 	</div>
 </body>
+<script src="./node_modules/qubi/qubi.js"></script>
+<script>
+    //adding something after it 
+    function after(selectorElement, createElement, newClass){
+        const afterElement = document.querySelectorAll(selectorElement)[0];
+        const newElement = document.createElement(createElement);
+        newElement.classList.add(newClass);
+        afterElement.parentNode.insertBefore(newElement, afterElement.nextSibling);
+    };
+    
+    var strength = document.getElementById("strength");
+    var passInput = document.getElementById("passwordInput");
+    strength.value = 0;
+    strength.max = Qubi.totalScore;
+    passInput.addEventListener("keyup", function () {
+        strength.value = Qubi.checkPassword(passInput.value);
+    });
+    //script to do stuff
+    const progress = document.querySelectorAll("#strength"); 
+    progress[0].addEventListener("mouseover" ,function(){
+        after("#strength", "div", "safepassword");
+    });
+
+    progress[0].addEventListener("mouseout" ,function(){
+        const safepassword = document.querySelectorAll(".safepassword");
+        safepassword[0].remove();
+    });
+</script>
 </html>
